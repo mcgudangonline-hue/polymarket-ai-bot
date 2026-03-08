@@ -67,53 +67,10 @@ Markets are filtered by:
 - volume
 
 Default filters:
-
-
----
-
-# Strategy Logic
-
-Hybrid strategy combines:
-
-Threshold strategy  
-+
-AI reasoning engine
-
-BUY conditions:
-
-- price <= buy_threshold
-- AI recommendation = BUY
-- AI confidence ≥ 0.6
-- price movement ≥ min_price_change_for_entry
-
-SELL conditions:
-
-- take_profit
-- stop_loss
-- max_hold_iterations
-
-Exit signals are **not blocked by AI reasoning**.
-
----
-
-# Risk Management
-
-Features:
-
-Take profit: 10%  
-Stop loss: 5%  
-Max hold iterations: configurable  
-Re-entry cooldown: prevents immediate re-buy.
-
----
-
-# Gamma Price Movement Filter
-
-To avoid flat-price entries:
-
-BUY only allowed if:
-
-
+min_gamma_price = 0.03
+max_gamma_price = 0.97
+min_liquidity = 5000
+min_volume = 10000
 
 ---
 
@@ -158,6 +115,8 @@ Re-entry cooldown: prevents immediate re-buy.
 To avoid flat-price entries:
 
 BUY only allowed if:
+
+abs(price_change) >= min_price_change_for_entry
 
 
 Price movement uses configurable lookback window.
@@ -165,6 +124,9 @@ Price movement uses configurable lookback window.
 ---
 
 # Current Mode
+
+price_source = gamma
+bot_mode = paper
 
 
 CLOB access currently returns 403.
