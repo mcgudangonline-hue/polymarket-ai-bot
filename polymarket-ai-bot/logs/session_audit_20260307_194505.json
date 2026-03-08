@@ -1,0 +1,87 @@
+{
+  "bot_mode": "paper",
+  "bankroll": 1000,
+  "max_risk_per_trade": 0.02,
+  "max_trades_per_session": 2,
+  "polling_interval_seconds": 10,
+  "buy_threshold": 0.56,
+  "sell_threshold": 0.55,
+  "executed_trades": 2,
+  "trade_history": [
+    {
+      "trade_id": 1,
+      "timestamp": "2026-03-07T19:44:14.563783",
+      "side": "BUY",
+      "price": 0.0125125,
+      "size": 1600.0
+    },
+    {
+      "trade_id": 2,
+      "timestamp": "2026-03-07T19:44:45.442909",
+      "side": "SELL",
+      "price": 0.0124875,
+      "size": 1600.0
+    }
+  ],
+  "closed_positions": [
+    {
+      "side": "BUY",
+      "entry_price": 0.0125125,
+      "size": 1600.0,
+      "exit_price": 0.0124875,
+      "realized_pnl": -0.03999999999999837,
+      "exit_reason": "max_hold",
+      "entry_fee": 0.02002,
+      "exit_fee": 0.01998,
+      "total_fee": 0.04,
+      "realized_pnl_after_fees": -0.07999999999999838
+    }
+  ],
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "price": 0.0125,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 2,
+      "price": 0.0125,
+      "signal": "HOLD",
+      "has_open_position": true,
+      "unrealized_pnl": -0.019999999999997797
+    },
+    {
+      "iteration": 3,
+      "price": 0.0125,
+      "signal": "HOLD",
+      "has_open_position": true,
+      "unrealized_pnl": -0.019999999999997797
+    },
+    {
+      "iteration": 4,
+      "price": 0.0125,
+      "signal": "SELL",
+      "has_open_position": true,
+      "unrealized_pnl": -0.019999999999997797
+    },
+    {
+      "iteration": 5,
+      "price": 0.0125,
+      "signal": "HOLD",
+      "has_open_position": false
+    }
+  ],
+  "final_open_position": null,
+  "total_realized_pnl": -0.03999999999999837,
+  "total_fees_paid": 0.04,
+  "total_realized_pnl_after_fees": -0.07999999999999838,
+  "final_unrealized_pnl": 0.0,
+  "total_closed_trades": 1,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "win_rate": 0.0,
+  "average_realized_pnl": -0.03999999999999837,
+  "best_trade_pnl": -0.03999999999999837,
+  "worst_trade_pnl": -0.03999999999999837
+}

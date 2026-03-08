@@ -1,0 +1,42 @@
+bot:
+  name: polymarket_ai_bot
+  mode: paper
+
+trading:
+  bankroll: 1000
+  max_risk_per_trade: 0.02
+  max_trades_per_session: 2
+  fee_rate: 0.001
+  slippage_rate: 0.001
+
+market:
+  data_source: polymarket  # polymarket = live discovery + scan; simulator = local only
+  polling_interval_seconds: 10
+
+polymarket:
+  api_base: "https://clob.polymarket.com"
+  token_id: ""  # empty = scanner selects best market automatically
+  fallback_price: 0.5
+  timeout_seconds: 5
+  scan_limit: 10  # max markets to scan when auto-selecting
+  price_source: gamma  # gamma | clob (gamma = no CLOB requests; clob = CLOB first then gamma fallback)
+  # Gamma market quality filters (skip markets outside these bounds)
+  min_gamma_price: 0.03
+  max_gamma_price: 0.97
+  min_liquidity: 5000
+  min_volume: 10000
+  enable_orderbook_diagnostic: false  # set true to log orderbook at startup (can trigger 403 in gamma mode)
+
+strategy:
+  mode: hybrid  # threshold | hybrid (threshold + AI reasoning)
+  # Temporary testing values for paper-trading validation
+  buy_threshold: 0.56
+  sell_threshold: 0.55
+  # Position-aware exit rules (for low-priced Polymarket markets)
+  take_profit_pct: 0.10
+  stop_loss_pct: 0.05
+  max_hold_iterations: 3
+  reentry_cooldown_iterations: 2
+  # Gamma price movement filter: require minimum price move before BUY
+  min_price_change_for_entry: 0.003
+  min_price_change_lookback: 1

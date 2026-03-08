@@ -1,0 +1,44 @@
+{
+  "bot_mode": "paper",
+  "bankroll": 1000,
+  "max_risk_per_trade": 0.02,
+  "max_trades_per_session": 2,
+  "polling_interval_seconds": 10,
+  "buy_threshold": 0.54,
+  "sell_threshold": 0.56,
+  "executed_trades": 0,
+  "trade_history": [],
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "price": 0.5556,
+      "signal": "HOLD",
+      "has_open_position": false
+    },
+    {
+      "iteration": 2,
+      "price": 0.5644,
+      "signal": "HOLD",
+      "has_open_position": false
+    },
+    {
+      "iteration": 3,
+      "price": 0.5602,
+      "signal": "HOLD",
+      "has_open_position": false
+    },
+    {
+      "iteration": 4,
+      "price": 0.5514,
+      "signal": "HOLD",
+      "has_open_position": false
+    },
+    {
+      "iteration": 5,
+      "price": 0.5574,
+      "signal": "HOLD",
+      "has_open_position": false
+    }
+  ],
+  "final_open_position": null
+}

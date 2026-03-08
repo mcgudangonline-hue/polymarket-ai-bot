@@ -1,0 +1,78 @@
+{
+  "bot_mode": "paper",
+  "bankroll": 1000,
+  "max_risk_per_trade": 0.02,
+  "max_trades_per_session": 2,
+  "polling_interval_seconds": 10,
+  "buy_threshold": 0.56,
+  "sell_threshold": 0.55,
+  "executed_trades": 2,
+  "trade_history": [
+    {
+      "trade_id": 1,
+      "timestamp": "2026-03-07T15:24:46.964150",
+      "side": "BUY",
+      "price": 0.549,
+      "size": 36.42987249544626
+    },
+    {
+      "trade_id": 2,
+      "timestamp": "2026-03-07T15:24:56.968975",
+      "side": "SELL",
+      "price": 0.551,
+      "size": 36.42987249544626
+    }
+  ],
+  "closed_positions": [
+    {
+      "side": "BUY",
+      "entry_price": 0.549,
+      "size": 36.42987249544626,
+      "exit_price": 0.551,
+      "realized_pnl": 0.0728597449908926
+    }
+  ],
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "price": 0.549,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 2,
+      "price": 0.551,
+      "signal": "SELL",
+      "has_open_position": true,
+      "unrealized_pnl": 0.0728597449908926
+    },
+    {
+      "iteration": 3,
+      "price": 0.5542,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 4,
+      "price": 0.5598,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 5,
+      "price": 0.5565,
+      "signal": "BUY",
+      "has_open_position": false
+    }
+  ],
+  "final_open_position": null,
+  "total_realized_pnl": 0.0728597449908926,
+  "final_unrealized_pnl": 0.0,
+  "total_closed_trades": 1,
+  "winning_trades": 1,
+  "losing_trades": 0,
+  "win_rate": 1.0,
+  "average_realized_pnl": 0.0728597449908926,
+  "best_trade_pnl": 0.0728597449908926,
+  "worst_trade_pnl": 0.0728597449908926
+}

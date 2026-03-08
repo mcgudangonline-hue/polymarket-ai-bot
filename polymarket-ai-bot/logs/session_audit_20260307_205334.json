@@ -1,0 +1,87 @@
+{
+  "bot_mode": "paper",
+  "bankroll": 1000,
+  "max_risk_per_trade": 0.02,
+  "max_trades_per_session": 2,
+  "polling_interval_seconds": 10,
+  "buy_threshold": 0.56,
+  "sell_threshold": 0.55,
+  "executed_trades": 2,
+  "trade_history": [
+    {
+      "trade_id": 1,
+      "timestamp": "2026-03-07T20:52:44.292311",
+      "side": "BUY",
+      "price": 0.05505499999999999,
+      "size": 363.6363636363636
+    },
+    {
+      "trade_id": 2,
+      "timestamp": "2026-03-07T20:53:14.889371",
+      "side": "SELL",
+      "price": 0.054945,
+      "size": 363.6363636363636
+    }
+  ],
+  "closed_positions": [
+    {
+      "side": "BUY",
+      "entry_price": 0.05505499999999999,
+      "size": 363.6363636363636,
+      "exit_price": 0.054945,
+      "realized_pnl": -0.03999999999999711,
+      "exit_reason": "max_hold",
+      "entry_fee": 0.020019999999999996,
+      "exit_fee": 0.01998,
+      "total_fee": 0.039999999999999994,
+      "realized_pnl_after_fees": -0.0799999999999971
+    }
+  ],
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "price": 0.055,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 2,
+      "price": 0.055,
+      "signal": "HOLD",
+      "has_open_position": true,
+      "unrealized_pnl": -0.01999999999999729
+    },
+    {
+      "iteration": 3,
+      "price": 0.055,
+      "signal": "HOLD",
+      "has_open_position": true,
+      "unrealized_pnl": -0.01999999999999729
+    },
+    {
+      "iteration": 4,
+      "price": 0.055,
+      "signal": "SELL",
+      "has_open_position": true,
+      "unrealized_pnl": -0.01999999999999729
+    },
+    {
+      "iteration": 5,
+      "price": 0.055,
+      "signal": "HOLD",
+      "has_open_position": false
+    }
+  ],
+  "final_open_position": null,
+  "total_realized_pnl": -0.03999999999999711,
+  "total_fees_paid": 0.039999999999999994,
+  "total_realized_pnl_after_fees": -0.0799999999999971,
+  "final_unrealized_pnl": 0.0,
+  "total_closed_trades": 1,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "win_rate": 0.0,
+  "average_realized_pnl": -0.03999999999999711,
+  "best_trade_pnl": -0.03999999999999711,
+  "worst_trade_pnl": -0.03999999999999711
+}

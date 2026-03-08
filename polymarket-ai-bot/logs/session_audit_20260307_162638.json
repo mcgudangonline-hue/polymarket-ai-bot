@@ -1,0 +1,84 @@
+{
+  "bot_mode": "paper",
+  "bankroll": 1000,
+  "max_risk_per_trade": 0.02,
+  "max_trades_per_session": 2,
+  "polling_interval_seconds": 10,
+  "buy_threshold": 0.56,
+  "sell_threshold": 0.55,
+  "executed_trades": 2,
+  "trade_history": [
+    {
+      "trade_id": 1,
+      "timestamp": "2026-03-07T16:25:48.587503",
+      "side": "BUY",
+      "price": 0.5494489,
+      "size": 36.43650938240116
+    },
+    {
+      "trade_id": 2,
+      "timestamp": "2026-03-07T16:25:58.592721",
+      "side": "SELL",
+      "price": 0.5563431,
+      "size": 36.43650938240116
+    }
+  ],
+  "closed_positions": [
+    {
+      "side": "BUY",
+      "entry_price": 0.5494489,
+      "size": 36.43650938240116,
+      "exit_price": 0.5563431,
+      "realized_pnl": 0.2512005829841487,
+      "entry_fee": 0.02002,
+      "exit_fee": 0.020271200582984147,
+      "total_fee": 0.040291200582984146,
+      "realized_pnl_after_fees": 0.21090938240116458
+    }
+  ],
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "price": 0.5489,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 2,
+      "price": 0.5569,
+      "signal": "SELL",
+      "has_open_position": true,
+      "unrealized_pnl": 0.27149207505920686
+    },
+    {
+      "iteration": 3,
+      "price": 0.5479,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 4,
+      "price": 0.5546,
+      "signal": "BUY",
+      "has_open_position": false
+    },
+    {
+      "iteration": 5,
+      "price": 0.5509,
+      "signal": "BUY",
+      "has_open_position": false
+    }
+  ],
+  "final_open_position": null,
+  "total_realized_pnl": 0.2512005829841487,
+  "total_fees_paid": 0.040291200582984146,
+  "total_realized_pnl_after_fees": 0.21090938240116458,
+  "final_unrealized_pnl": 0.0,
+  "total_closed_trades": 1,
+  "winning_trades": 1,
+  "losing_trades": 0,
+  "win_rate": 1.0,
+  "average_realized_pnl": 0.2512005829841487,
+  "best_trade_pnl": 0.2512005829841487,
+  "worst_trade_pnl": 0.2512005829841487
+}
